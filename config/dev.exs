@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :hatcher, Hatcher.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "dev",
   hostname: "localhost",
   database: "hatcher_dev",
   stacktrace: true,
