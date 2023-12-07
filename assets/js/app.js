@@ -1,7 +1,9 @@
 // If you want to use Phoenix channels, run `mix help phx.gen.channel`
 // to get started and then uncomment the line below.
 // import "./user_socket.js"
-import "./canvas_utils.js"
+import "./engine/canvas_utils.js"
+import "./engine/vertex_buffer.js"
+import "./engine/shader_support.js"
 
 // You can include dependencies in two ways.
 //
@@ -40,3 +42,5 @@ liveSocket.connect()
 // >> liveSocket.disableLatencySim()
 window.liveSocket = liveSocket
 
+// Engine initialization
+doGlDraw();
